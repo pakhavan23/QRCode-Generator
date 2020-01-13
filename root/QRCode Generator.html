@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QRCode Generator</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <link rel="icon" href="./images/1-512.png" type="image/x-icon">
+    <script src="./script/qrcode.js"></script>
+    <script src="./script/qrcode.min.js"></script>
+    <script src="./script/jquery.min.js"></script>  
+</head>
+<body>
+    <div id="main">
+        <div id="reader">
+            <h1 id="title1" class="marg">QRCode Reader</h1>
+            <p id="description" class="marg">Import a QRCode and get its URL.</p>
+            <input class="marg" type="file" id="file" name="file"/>
+            <p id="url" class="marg">Content :  <span id="content" ></span></p>
+            <script src="./script/qrReader.js"></script>
+        </div>
+        <div id="generator">
+            <h1 id="title2" class="marg">QRCode Generator</h1>
+            <p id="description" class="marg">Enter a URL and get its QRCode.</p>
+            <input id="text" type="text" />
+            <br/>
+            <button id="get" type="button">Get QRCode</button>
+            <button id="clear" type="button">Clear</button>
+            <br/>
+            <p id="error"></p>
+            <div id="qrcode"></div>
+        </div>
+        <div id="history">
+            <h1 id="title3" class="marg">History</h1>
+            <p id="description" class="marg">See your recent log.</p>
+            <div id="log" class="marg"></div>
+        </div>
+    </div>
+    <script src="./script/QRCode Generator.js"></script>
+</body>
+</html>
